@@ -31,7 +31,7 @@ var populate = function(gridDocument) {
 
     // Build lockups
     let catCodes = ["100", "200", "300", "400", "500"];
-    let numberOfCells = 45000;
+    let numberOfCells = 40000;
 
     let lockups = "";
     for(let i = 0; i < numberOfCells; ++i) {
