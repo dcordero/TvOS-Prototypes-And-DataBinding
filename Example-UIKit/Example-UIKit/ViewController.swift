@@ -10,33 +10,29 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource {
 
-    private var collectionView: UICollectionView!
+    var catCodes = ["100", "200", "300", "400", "500"]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setUpCollectionView()
-    }
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return 10
+        return 45000
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ViewCell", for: indexPath) as! ViewCell
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        cell.backgroundColor = .red
+        let currentCat = catCodes[indexPath.row % catCodes.count];
+        cell.configure(for: viewModel(from: currentCat))
+        
         return cell
     }
     
     // MARK: Private
     
-    private func setUpCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
-        collectionView.dataSource = self
-        view.addSubview(collectionView)
+    private func viewModel(from catCode: String) -> CatViewModel {
+        return CatViewModel(imageURL: URL(string: "https://http.cat/\(catCode)"),
+                            title: catCode)
     }
 }

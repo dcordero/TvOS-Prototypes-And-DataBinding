@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :tvos, '10.0'
+use_frameworks!
+
+target 'Example-UIKit' do
+  pod 'SDWebImage', '~> 4.1.0'
+end
+

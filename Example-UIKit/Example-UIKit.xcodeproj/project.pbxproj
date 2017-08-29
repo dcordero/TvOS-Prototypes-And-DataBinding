@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DB704253C733E79081EE908 /* Pods_Example_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F30962305DF5C66853B800 /* Pods_Example_UIKit.framework */; };
 		FF749E5A1F4AC79800DA9C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF749E591F4AC79800DA9C39 /* AppDelegate.swift */; };
 		FF749E5C1F4AC79800DA9C39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF749E5B1F4AC79800DA9C39 /* ViewController.swift */; };
 		FF749E5F1F4AC79800DA9C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF749E5D1F4AC79800DA9C39 /* Main.storyboard */; };
 		FF749E611F4AC79900DA9C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF749E601F4AC79900DA9C39 /* Assets.xcassets */; };
+		FFB05FC01F4EAE4200F193E4 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB05FBF1F4EAE4200F193E4 /* ViewCell.swift */; };
+		FFB05FC21F4EAEFD00F193E4 /* CatViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB05FC11F4EAEFD00F193E4 /* CatViewMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53F30962305DF5C66853B800 /* Pods_Example_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		698CF07D9F760E2F8722000F /* Pods-Example-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-UIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example-UIKit/Pods-Example-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9D01C4AC5D457306CB0B5F89 /* Pods-Example-UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-UIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example-UIKit/Pods-Example-UIKit.release.xcconfig"; sourceTree = "<group>"; };
 		FF749E561F4AC79800DA9C39 /* Example-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF749E591F4AC79800DA9C39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF749E5B1F4AC79800DA9C39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF749E5E1F4AC79800DA9C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF749E601F4AC79900DA9C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF749E621F4AC79900DA9C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB05FBF1F4EAE4200F193E4 /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
+		FFB05FC11F4EAEFD00F193E4 /* CatViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB704253C733E79081EE908 /* Pods_Example_UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C084FC76D34703A7CEFE0A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				698CF07D9F760E2F8722000F /* Pods-Example-UIKit.debug.xcconfig */,
+				9D01C4AC5D457306CB0B5F89 /* Pods-Example-UIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E42B822F0591ADCC811EFFF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F30962305DF5C66853B800 /* Pods_Example_UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF749E4D1F4AC79800DA9C39 = {
 			isa = PBXGroup;
 			children = (
 				FF749E581F4AC79800DA9C39 /* Example-UIKit */,
 				FF749E571F4AC79800DA9C39 /* Products */,
+				8C084FC76D34703A7CEFE0A2 /* Pods */,
+				E42B822F0591ADCC811EFFF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,10 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				FF749E591F4AC79800DA9C39 /* AppDelegate.swift */,
+				FFB05FBF1F4EAE4200F193E4 /* ViewCell.swift */,
 				FF749E5B1F4AC79800DA9C39 /* ViewController.swift */,
 				FF749E5D1F4AC79800DA9C39 /* Main.storyboard */,
 				FF749E601F4AC79900DA9C39 /* Assets.xcassets */,
 				FF749E621F4AC79900DA9C39 /* Info.plist */,
+				FFB05FC11F4EAEFD00F193E4 /* CatViewMode.swift */,
 			);
 			path = "Example-UIKit";
 			sourceTree = "<group>";
@@ -68,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF749E651F4AC79900DA9C39 /* Build configuration list for PBXNativeTarget "Example-UIKit" */;
 			buildPhases = (
+				0DF22B44FBDE3B2DA7857E9B /* [CP] Check Pods Manifest.lock */,
 				FF749E521F4AC79800DA9C39 /* Sources */,
 				FF749E531F4AC79800DA9C39 /* Frameworks */,
 				FF749E541F4AC79800DA9C39 /* Resources */,
+				31FAFAF5A37692A322E03373 /* [CP] Embed Pods Frameworks */,
+				039DAC504B769783F2F87DBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +159,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		039DAC504B769783F2F87DBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example-UIKit/Pods-Example-UIKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DF22B44FBDE3B2DA7857E9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31FAFAF5A37692A322E03373 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example-UIKit/Pods-Example-UIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF749E521F4AC79800DA9C39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB05FC21F4EAEFD00F193E4 /* CatViewMode.swift in Sources */,
+				FFB05FC01F4EAE4200F193E4 /* ViewCell.swift in Sources */,
 				FF749E5C1F4AC79800DA9C39 /* ViewController.swift in Sources */,
 				FF749E5A1F4AC79800DA9C39 /* AppDelegate.swift in Sources */,
 			);
@@ -257,9 +340,11 @@
 		};
 		FF749E661F4AC79900DA9C39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 698CF07D9F760E2F8722000F /* Pods-Example-UIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = L27TU8W49Z;
 				INFOPLIST_FILE = "Example-UIKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dcordero.Example-UIKit";
@@ -271,9 +356,11 @@
 		};
 		FF749E671F4AC79900DA9C39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D01C4AC5D457306CB0B5F89 /* Pods-Example-UIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = L27TU8W49Z;
 				INFOPLIST_FILE = "Example-UIKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dcordero.Example-UIKit";
